@@ -1,40 +1,129 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>Presentazione bioinformatica</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/solarized.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!----- SLIDE TEMPLATE -----
+        <section data-markdown>
+          <textarea data-template>
+          </textarea>
+        </section>
+        ----- END OF SLIDE TEMPLATE ----->
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <section data-markdown>
+          <textarea data-template>
+            # Interessarsi alla bioiformatica o scappare via urlando
+          </textarea>
+        </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <section>
+          <h2>Salve!</h2>
+          <img src="assets/troy.webp" />
+        </section>
+
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              ## La bioinformatica
+
+              Perché?
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              ## Un mondo di strumenti già creati per i biologi e non solo
+
+              Giusto?
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              ## Esempio perfetto: BLAST
+
+              [L'esempio è pratico](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&USER_FORMAT_DEFAULTS=on&SET_SAVED_SEARCH=true&PAGE=Proteins&PROGRAM=blastp&QUERY=MSGLGDPCDTLASSTEKRRREQENKYLEELAELLSANISDIDSLSVKPDKCKIL%0AKKTVDQIQLMKRMEQEKSTTDDDVQKSDISSSSQGVIEKESLGPLLLEALDGFFFVVNCEGRIVFVSENV%0ATSYLGYNQEELMNTSVYSILHVGDHAKSLVNGVPWPQEATRRNSHTFNCRMLIHPPDEPGTE%0ANQEACQRYEVMQCFTVSQPKSIQEDGEDFQSCLICIARRLPRPPAITGVESFMTKQDTTGKIISIDTSSL%0ARAAGRTGWEDLVRKCIYAFFQPQGREPSYARQLFQEVMTRGTASSPSYRFILNDGTMLSAHTKCKLCYPQ%0ASPDMQPFIMGIHIIDREHSGLSPQDDTNSGMSIPRVNPSVNPSISPAHGVARSSTLPPSNSNMVSTRINR%0AQQPSLNLNNSPMEGTGISLAQFMSPR%0ARQVTSGLATRPRMPNNSFPPNISTLSSPVGMTSSACNNNNRSYSNIPVTSLQGMNEGPNNSVGFSASSPV%0ALRQMSSQNSPSRLNIQPAKAESKDNKEIASILNEMIQSDNSSSDGKPLDSGLLHNNDRLSDGDSKYSQTS%0AHKLVQLLTTTAEQQLRHADIDSCPSSHSSLTERHKILHRLLQEGSPS%0ADITTLSVEPDKKDSASTSVSVTGQVQGNSSIKLELDASKKKESKDHQLLRYLLDKDEKDLRSTPNLSLDD%0AVKVKVEKKEQMDPCNTNPTPMTKPTPEEIKLEAQSQFTADLDQFDQLLPTLEKAAQLPGLCETDRMDGAV%0ATSVTIKSEILPASLQSATARPTSRLNRLPELELEAIDNQFGQPGTGDQIPWTNNTVTAINQSKSEDQCIS%0ASQLDELLCPPTTVEGRNDEKALLEQLVSFLSGKDETELAELDRALGIDKLVQGGGLDVLSERFPPQQATP%0APLIMEERPNLYSQPYSSPSPTANLPSPFQGMVRQKPSLGTMPVQVTPPRGAFSPGMGMQPRQTLNRPPAA%0APNQLRLQLQQRLQGQQQLIHQNRAPGLERTAPVGINMRSGMQQQITPQPPLNAQMLAQRQRELYSQQ%0AHRQRQLIQQQRAMLMRQQSFGNNLPPSSGLPVQMGNPRLPQGAPQQFPYPPNYGTNPGTPPASTSPFSQL%0AAANPEASLANRNSMVSRGMTGNIGGQFGTGINPQMQQNVFQYPGAGMVPQGEANFAPSLSPGSSMVPMPI%0APPPQSSSSSSSGGGGQSPDMKAWQQGAIGNNNVFSQAVQNQPTPAQPGVYNNMSITVSMAGGNTNVQN%0AMNPMMAQMQMSSLQMPGMNTVCPEQINDPALRHTGLYCNQLSSTDLLKTEADGTQDKKTEEFFSVVTTD&GAPCOSTS=11%201&DATABASE=pdb&BLAST_PROGRAMS=blastp&MAX_NUM_SEQ=100&SHORT_QUERY_ADJUST=on&EXPECT=0.05&WORD_SIZE=5&MATRIX_NAME=BLOSUM62&COMPOSITION_BASED_STATISTICS=2&EQ_MENU=Enter%20organism%20name%20or%20id--completions%20will%20be%20suggested&PROG_DEFAULTS=on&SHOW_OVERVIEW=true&SHOW_LINKOUT=true&ALIGNMENT_VIEW=Pairwise&MASK_CHAR=2&MASK_COLOR=1&GET_SEQUENCE=true&NEW_VIEW=true&NCBI_GI=false&NUM_OVERVIEW=100&DESCRIPTIONS=100&ALIGNMENTS=100&FORMAT_OBJECT=Alignment&FORMAT_TYPE=HTML&SHOW_CDS_FEATURE=false&ADV_VIEW=true)
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              ## ...tic tac...
+
+              - Ho uno strumenti potenti, imparo gli strumenti
+              - Mi interessa usare cacciaviti, non crearli
+              - Mi permette di focalizzarmi sulla componente biologica
+            </textarea>
+          </section>
+
+          <section>
+            <h2>Vediamo il risultato</h2>
+            <ul>
+              <div class="fragment">
+                <li>I match</li>
+                <li>Gli allineamenti</li>
+                <li>La tassonomia</li>
+              </div>
+              <li class="fragment">Gli score</li>
+              <li class="fragment">Gli E-value</li>
+            </ul>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              ## Semplicità e complessità
+
+              La biologia è complessa.
+
+              Fino a che punto gli strumenti per studiarla possono essere semplici?
+            </textarea>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Ipotesi assurda</h2>
+            <div class="fragment">
+              <p style="font-size: 1.5em">Vi interessa!</p>
+              <img src="assets/chipmunk-dramatic.gif" style="height: 8em" />
+            </div>
+          </section>
+
+          <section>
+            TODO: possibile esempio serio:
+            https://www.ncbi.nlm.nih.gov/dbvar/?term=breast%20cancer
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
+<!-- vim: set shiftwidth=2 softtabstop=2 expandtab : -->
